@@ -1,7 +1,14 @@
 import { createStore } from 'vuex'
 
+interface State{
+  props?: boolean;
+  name: string;
+}
+
 export default createStore({
   state: {
+    props: undefined,
+    name:''
   },
   getters: {
   },
